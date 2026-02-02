@@ -1,0 +1,9 @@
+{
+  "name": "microfrontends-mf-react",
+  "private": true,
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "start": "npm run start --workspace apps/remote & npm run start --workspace apps/host",
+    "build": "npm run build --workspace apps/remote && npm run build --workspace apps/host"
+  }
+}
